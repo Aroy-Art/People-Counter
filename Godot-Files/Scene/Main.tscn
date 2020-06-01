@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/Fonts/malgun_boot.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Scene/Main.gd" type="Script" id=2]
@@ -8,6 +8,38 @@ size = 72
 outline_size = 2
 font_data = ExtResource( 1 )
 
+[sub_resource type="DynamicFont" id=2]
+size = 72
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "Warning"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("MaxIn:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("MaxIn/ColorRect3:color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1, 1.2, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.2, 3.4, 3.6, 3.8, 4, 4.2, 4.4, 4.6, 4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2, 6.4, 6.6, 6.8, 7, 7.2, 7.4, 7.6, 7.8, 8, 8.2, 8.4, 8.6, 8.8, 9, 9.2, 9.4, 9.6, 9.8, 10 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ), Color( 0.921569, 0.00392157, 0.00392157, 1 ), Color( 0.921569, 0.00392157, 0.00392157, 0.607843 ) ]
+}
+
 [node name="Main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -15,7 +47,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-total_max = 50
+total_max = 15
 
 [node name="BG" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -145,6 +177,81 @@ margin_bottom = 45.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Total In: 5"
+
+[node name="MaxIn" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="MaxIn"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.156863, 0.156863, 0.156863, 0.752941 )
+
+[node name="ColorRect3" type="ColorRect" parent="MaxIn"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -232.0
+margin_top = -116.0
+margin_right = 240.0
+margin_bottom = 140.0
+color = Color( 0.921569, 0.00392157, 0.00392157, 0.607843 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="MaxIn"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -208.0
+margin_top = -92.0
+margin_right = 216.0
+margin_bottom = 116.0
+color = Color( 0.537255, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MaxIn"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -192.0
+margin_top = -92.0
+margin_right = 202.0
+margin_bottom = 106.0
+alignment = 1
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MaxIn/VBoxContainer"]
+margin_right = 394.0
+margin_bottom = 97.0
+custom_fonts/font = SubResource( 2 )
+text = "Warning!"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="MaxIn/VBoxContainer"]
+margin_top = 101.0
+margin_right = 394.0
+margin_bottom = 198.0
+custom_fonts/font = SubResource( 2 )
+text = "Too many in"
+align = 1
+valign = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/Warning = SubResource( 3 )
 [connection signal="pressed" from="ColorIn/FemaleInButton" to="." method="_on_FemaleInButton_pressed"]
 [connection signal="pressed" from="ColorIn/MaleInButton" to="." method="_on_MaleInButton_pressed"]
 [connection signal="pressed" from="ColorOut/FemaleOutButton" to="." method="_on_FemaleOutButton_pressed"]
